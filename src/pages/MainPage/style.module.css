@@ -1,0 +1,177 @@
+.main {
+    position: relative;
+    padding: 48px 0 32px;
+}
+
+.coin {
+    position: absolute;
+    width: 312px;
+    z-index: 0;
+}
+
+.bitcoin {
+    top: 0;
+    right: 62px;
+    animation: bitcoinTransition 10s linear infinite;
+}
+
+.litecoin {
+    top: 277px;
+    right: 282px;
+    animation: litecoinTransition 10s linear infinite;
+}
+
+.ethereum {
+    bottom: 0;
+    right: 62px;
+    animation: ethereumTransition 10s linear infinite;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 132.4px;
+}
+
+.wrapperLeft {
+    position: relative;
+    z-index: 99;
+    grid-column: 1/4;
+}
+
+.wrapperRight {
+    grid-column: 3/4;
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+    z-index: 98;
+}
+
+.title {
+    max-width: 1008px;
+    font-size: clamp(40px, 5vw, 84px);
+    text-transform: uppercase;
+    color: var(--accent-color);
+    line-height: clamp(43.2px, 5vw, 108.4px);
+    background: linear-gradient(90deg, 
+    rgba(124, 111, 207, 0.97), 
+    rgba(116, 174, 170, 0.95), 
+    rgba(111, 207, 151, 1));
+    background-clip: text;
+    margin-bottom: 44px;
+    background-size: 300% 300%;
+    animation: bgTransition 5s linear infinite;
+}
+
+.title span {
+    color: transparent;
+}
+
+.subtitle {
+    font-size: clamp(20px, 5vw, 34px);
+    line-height: clamp(24px, 5vw, 40.8px);
+    color: var(--gray-color);
+    margin-bottom: 38px;
+}
+
+.subscribers {
+    max-width: 554px;
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0px 100px;
+}
+
+.btn {
+    max-width: 532px;
+}
+
+.socials {
+    display: flex;
+    gap: 20px;
+    margin-top: 76px;
+}
+
+
+@keyframes bgTransition {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+@keyframes bitcoinTransition {
+    0% {
+        transform: translate(0%, 0%);
+    }
+    33% {
+        transform: translate(-80%, 80%) rotate(-45deg);
+    }
+    66% {    
+        transform: translate(0%, 120%);
+    }
+    100% {
+        transform: translate(0%, 0%);
+    }
+}
+
+
+@keyframes litecoinTransition {
+    0% {
+        transform: translate(0%, 0%);
+    }
+    33% {
+        transform: translate(80%, 60%);
+    }
+    66% {    
+        transform: translate(60%, -70%) rotate(25deg);
+    }
+    100% {
+        transform: translate(0%, 0%);
+    }
+}
+
+@keyframes ethereumTransition {
+    0% {
+        transform: translate(0%, 0%);
+    }
+    33% {
+        transform: translate(-10%, -110%) rotate(-25deg);
+    }
+    66% {    
+        transform: translate(-80%, -50%);
+    }
+    100% {
+        transform: translate(0%, 0%);
+    }
+}
+
+
+@media (max-width: 860px) {
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .wrapperRight {
+        display: none;
+    }
+    .coin {
+        width: 136px;
+    }
+    .subscribers {
+        margin: 0 auto 28px;
+    }
+    .btn {
+        max-width: 100%;
+    }
+    .socials {
+        margin-top: 18px;
+        justify-content: center;
+    }
+}

@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+*:disabled {
+  pointer-events: none;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+a {
+  display: inline-block;
+  color: inherit;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+a:focus-visible {
+  outline: 0;
+}
+
+input {
+  outline: none;
+  border-color: transparent;
+  background-color: transparent;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+.zero-line-h {
+  line-height: 0;
+}
+
+body,html {
+  font-family: Teko, sans-serif;
+  background-color: #1C1A1A;
+}
+
+:root {
+  --accent-color: rgba(242, 242, 242, 1);
+  --gray-color: rgba(242, 242, 242, 0.4)
+}
+
+.container {
+  max-width: 1330px;
+  margin: 0 auto;
+  padding: 0px 15px;
+}
+
+
