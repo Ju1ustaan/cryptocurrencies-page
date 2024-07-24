@@ -68,3 +68,10 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+## О проекте
+
+Эта страница была сделана в рамках тестового задания, на позицию Frontend разработчика. 
+
+Проект разработан с использованием React и следуя стандартам для создания React-приложений. Используется React 18, который предоставляет улучшения в производительности и удобстве разработки. Инструменты для тестирования включают библиотеку Testing Library, что упрощает написание и поддержку тестов. Конфигурация ESLint настроена для обеспечения качества кода и соблюдения лучших практик разработки на React.
